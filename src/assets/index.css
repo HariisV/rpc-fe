@@ -1,0 +1,27 @@
+.css-5e0rzf-MuiFormHelperText-root.Mui-error{
+  margin-left: 0 !important;
+}
+.button__primary{
+  background-color: #4763E4 !important;
+  color: white !important;
+}
+.button__primary:disabled{
+  opacity: 0.6;
+}
+
+.button__submit{
+  font-weight: 500;
+  padding: 8px 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.form__input .MuiOutlinedInput-root{
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+}

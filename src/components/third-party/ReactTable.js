@@ -106,6 +106,7 @@ export const ReactTable = ({
   };
 
   const onChangeGotoPage = (event) => {
+    console.log(event);
     onGotoPage(event);
   };
 
@@ -168,7 +169,9 @@ export const ReactTable = ({
               <TableCell sx={{ p: 2 }} colSpan={colSpanPagination}>
                 {/* rows => jumlah data, pageSize => 5, 10 */}
                 <TablePagination
-                  gotoPage={onChangeGotoPage}
+                  gotoPage={(e) => {
+                    onChangeGotoPage(e);
+                  }}
                   changePageSize={onChangeSetPageSize}
                   totalPagination={totalPagination}
                   pageIndex={0}
@@ -316,7 +319,7 @@ export const TablePagination = ({ gotoPage, totalPagination, changePageSize, set
         <Pagination
           // count={Math.ceil(rows.length / pageSize)}
           count={totalPagination}
-          page={pageIndex}
+          page={pageIndex || 1}
           onChange={handleChangePagination}
           color="primary"
           variant="combined"
